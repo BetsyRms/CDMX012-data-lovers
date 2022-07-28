@@ -8,14 +8,14 @@ export const drawResults = (character) => {
 export const characterInfo = (information) => {
   return `<section id="info">
   <img src="${information.image}" alt="" class="img">
-  <h2>Name:</h2> <h3>${information.name}</h3>
-  <p><h2>Specie:</h2><h3>${information.species}</h3></p>
-  <h2>Gender:</h2> <h3>${information.gender}</h3>
-  <h2>Status:</h2> <h3>${information.status}</h3>
-  <h2>Type:</h2> <h3>${information.type}</h3>
-  <h2>Origin:</h2> <h3>${information.origin.name}</h3>
-  <h2>Location:</h2> <h3>${information.location.name}</h3>
-  <h2>Episode:</h2> <h3>${information.episode.length}</h3>
+  <div><h2>Name:</h2> <h3>${information.name}</h3></div>
+  <div><h2>Specie:</h2><h3>${information.species}</h3></div>
+  <div><h2>Gender:</h2> <h3>${information.gender}</h3></div>
+  <div><h2>Status:</h2> <h3>${information.status}</h3></div>
+  <div><h2>Type:</h2> <h3>${information.type}</h3></div>
+  <div><h2>Origin:</h2> <h3>${information.origin.name}</h3></div>
+  <div><h2>Location:</h2> <h3>${information.location.name}</h3></div>
+  <div><h2>Episode:</h2> <h3>${information.episode.length}</h3></div>
   </section>`;
 };
 

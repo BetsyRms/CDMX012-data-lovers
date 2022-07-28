@@ -13,7 +13,7 @@ function searchName() {
     for (let names of data.results) {
       let drawName = names.name.toLowerCase();
       if (drawName.indexOf(boxValue) !== -1) {
-        // console.log(drawResults(names));
+        console.log(drawResults(names));
 
         drawSearch.innerHTML += drawResults(names);
       }
