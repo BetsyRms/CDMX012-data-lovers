@@ -12,26 +12,54 @@
     />
   </head>
   <body>
-    <div class="figureSesos">
-      <img src="sesos.png" alt="" class="sesos" />
-    </div>
-    <figure class="space">
-      <img src="space.png" alt="" class="space" />
-    </figure>
-    <nav id="nav">
+  <section class="backgroundSpace">
+    <img src="sesos.png" alt="" class="sesos" />
+    <section class="nav">
       <img src="ship.png" alt="" class="ship">
-      <input type="text" name="" class="search" placeholder="Buscar" />
-
+      <input type="text" name="" class="search" />
       <div class="dropdown">
-        <button class="dropbtn">Episodios</button>
+        <button class="dropbtn">Episodes</button>
+        <div class="dropdown-content">
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/1">Episode 1</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/2">Episode 2</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/3">Episode 3</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/4">Episode 4</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/5">Episode 5</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/6">Episode 6</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/7">Episode 7</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/8">Episode 8</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/9">Episode 9</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/10">Episode 10</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/11">Episode 11</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/12">Episode 12</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/13">Episode 13</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/14">Episode 14</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/15">Episode 15</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/16">Episode 16</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/17">Episode 17</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/18">Episode 18</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/19">Episode 19</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/20">Episode 20</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/21">Episode 21</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/22">Episode 22</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/23">Episode 23</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/24">Episode 24</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/25">Episode 25</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/26">Episode 26</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/27">Episode 27</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/28">Episode 28</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/29">Episode 29</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/30">Episode 30</button>
+          <button class="sub" id="https://rickandmortyapi.com/api/episode/31">Episode 31</button>
+        </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Especie</button>
+        <button class="dropbtn">Specie</button>
         <div class="dropdown-content">
-          <button id="Human" class="subcategories">Humano</button>
+          <button id="Human" class="subcategories">Human</button>
           <button id="Alien" class="subcategories">Alien</button>
-          <button id="unknown" class="subcategories">Desconocido</button>
-          <button id="Humanoid" class="subcategories">Humanoide</button>
+          <button id="unknown" class="subcategories">Unknown</button>
+          <button id="Humanoid" class="subcategories">Humanoid</button>
           <button id="Cronenberg" class="subcategories">Cronenberg</button>
           <button id="Disease" class="subcategories">Disease</button>
           <button id="Mytholog" class="subcategories">Mytholog</button>
@@ -42,29 +70,22 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Género</button>
+        <button class="dropbtn">Gender</button>
         <div class="dropdown-content">
-          <button class="subcat" id="male">Masculino</button>
-          <button class="subcat" id="female">Femenino</button>
-          <button class="subcat" id="genderless">Sin género</button>
-          <button class="subcat" >Desconocido</button>
+          <button class="subcat" id="Male">Male</button>
+          <button class="subcat" id="Female">Female</button>
+          <button class="subcat" id="Genderless">Genderless</button>
+          <button class="subcat" id="unknown">Unknown</button>
         </div>
       </div>
-    </nav>
-
+    </section>
+  </section>
+    <section class="drawSearch" id="drawSearch"></section>
+    <section class="specieSection" id="episodeSection"></section>
+    <section class="specieSection" id="genderSection"></section>
     <section class="specieSection" id="specieSection"></section>
-    <section class="drawSearch"></section>
-    <section id="genderSection"></section>
 
-    <!-- <section class="info"> -->
-      <!-- <img src="portal.png" alt="" id="portal"> -->
-    <!-- </section> -->
-
-    <div class="overlay" id="overlay">
-      <img src="portal.png" alt="" class="portal">
-      <p id="texto">holi</p>
-    </div>
-
+    <div class="overlay" id="overlay"></div>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
