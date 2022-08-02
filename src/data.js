@@ -19,6 +19,19 @@ export const characterInfo = (information) => {
   </section>`;
 };
 
+let search = document.querySelector(".search");
+
+export function filterSearch(data){
+  let result = '';
+  let boxValue = search.value.toLowerCase()
+  data.results.forEach(dataRM =>{
+    if(dataRM.name.toLocaleLowerCase().includes(boxValue)){
+      result += drawResults(dataRM);
+     }
+  });
+  return result;
+}
+
 export function filterData(specieId, data){
   let result = '';
   data.results.forEach(dataRM =>{
@@ -26,10 +39,28 @@ export function filterData(specieId, data){
       result += drawResults(dataRM);
      }
   });
-  console.log(result);
   return result;
 }
 
+export function filterGender(genderId, data){
+  let result = '';
+  data.results.forEach(dataRM =>{
+    if(dataRM.gender == genderId){
+      result += drawResults(dataRM);
+     }
+  });
+  return result;
+}
+
+export function filterEpisode(EspisodeId, data){
+  let result = '';
+  data.results.forEach(dataRM =>{
+    if(dataRM.episode.includes(EspisodeId)){
+      result += drawResults(dataRM);
+     }
+  });
+  return result;
+}
 // export const example = (letter) => {
 //   return "a" + letter;
 // };

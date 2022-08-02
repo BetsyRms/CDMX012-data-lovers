@@ -1,6 +1,7 @@
 body{
   display: grid;
   justify-content: center;
+  justify-items: center;
   background-image: url(stars.gif);
   }
 .backgroundSpace{
@@ -32,13 +33,18 @@ body{
 .search{
   height: 30px;
   margin: 8px;
-  background: rgba(196, 196, 196, 0.1);
+  background-image: url(loupe.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 25px;
+  background-color: rgba(196, 196, 196, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.678);
   box-sizing: border-box;
   border-radius: 20px;
   font-weight: bold;
   color: white;
   outline: none;
+  text-align: center;
 }
 .search:hover{
   border-color: chartreuse;
@@ -63,7 +69,7 @@ p{
   margin: 5px;
 }
 /* Style The Dropdown Button */
-.dropbtn{
+.dropbtn {
   background: none;
   margin: 10px;
   color: rgb(255, 255, 255);
@@ -90,13 +96,11 @@ p{
   height:120px; 
   overflow-y: scroll;
 }
-
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
-
 .dropdown-content::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-.dropdown-content::-webkit-scrollbar:vertical {
+.dropdown-content::-webkit-scrollbar:vertical{
   width:10px;
 }
 .dropdown-content::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
@@ -113,9 +117,8 @@ p{
 .dropdown-content::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
-
 /* Links inside the dropdown */
-.dropdown-content .subcategories {
+.dropdown-content .subcategories, .sub {
   font-weight: bold;
   font-family: 'Tomorrow', sans-serif;
   color: rgb(255, 255, 255);
@@ -126,7 +129,7 @@ p{
   border-radius: 20px;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content .subcategories:hover {
+.dropdown-content .subcategories:hover, .subcat:hover, .sub:hover {
   background-color: rgba(128, 255, 0, 0.678);
   border-radius: 20px;
 }
@@ -138,7 +141,7 @@ p{
 .dropdown:hover .dropbtn {
   border-color: chartreuse;
 }
-.subcategories{
+.subcategories, .subcat, .sub {
   background: none;
   margin: 7px;
   color: rgb(255, 255, 255);
@@ -148,17 +151,7 @@ p{
   cursor: pointer;
   font-size: large;
 }
-.subcat{
-  background: none;
-  margin: 7px;
-  color: rgb(255, 255, 255);
-  font-family: 'Tomorrow', sans-serif;
-  font-weight: bold;
-  border-radius: 20px; 
-  cursor: pointer;
-  font-size: large;
-}
-.specieSection{
+.specieSection, .episodeSection{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -175,13 +168,6 @@ p{
   align-items: center;
 }
 .imagen{
-  /* background-image: url(portal.png); */
-  /* transform: rotate(3600deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg); 
-  transition: transform 4s;
-  -webkit-transition: -webkit-transform 4s;
-  -moz-transition: -moz-transform 4s;  */
   width: 150px;
   margin: 30px;
   box-shadow: 0px 8px 16px 0px rgba(39, 231, 21, 0.753);
@@ -190,37 +176,6 @@ p{
   box-shadow: inset 0 0 55px 10 px black;
   cursor: pointer;
 }
-/* #openPortal{ */
-  /* position: absolute;
-  top: 55%; */
-  /* position: fixed;
-  display: none; */
-  /* width: 100%; */
-  /* height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
-  /* background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-}
-#openPortal:target{
-  display: block; */
-  /* opacity: 50%; */
-/* } */
-.portal{
-  width: 10%;
-  color: #fff;
-  z-index: 50;
-}
-/* #overlay{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%; */
-
-/*sección género*/
 .genderSection{
   color: #fff;
   display: flex;
@@ -256,7 +211,6 @@ p{
   width: 280px;
   border-radius: 130px;
   box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
-
 }
 #info{
   display: flex;
@@ -266,14 +220,11 @@ p{
 h2{
   color: chartreuse;
   font-size: 32px;
-  /* margin-right: 5px;
-  margin-left: 20px; */
   margin: 10px 5px 5px 20px;
 }
 h3{
   margin: 10px 20px 5px 0px;
   font-size: 32px;
-  /* margin-right: 20px; */
 }
 div{
   display: flex;
